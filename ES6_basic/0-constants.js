@@ -10,8 +10,6 @@ export function getLast() {
 export function taskNext() {
   let combination = 'But sometimes let';
   combination += getLast();
+
   return combination;
 }
-
-console.log(1+2)
-console.log(`${taskFirst()} ${taskNext()}`);
