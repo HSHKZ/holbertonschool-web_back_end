@@ -12,3 +12,4 @@ console.log(tc2);
 console.log(tc2 instanceof TestCar);
 
 console.log(tc1 == tc2);
+w
