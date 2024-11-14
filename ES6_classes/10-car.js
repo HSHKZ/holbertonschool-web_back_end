@@ -23,3 +23,4 @@ export default class Car {
       return new constructor(this._brand, this._motor, this._color);
   }
 }
+5
