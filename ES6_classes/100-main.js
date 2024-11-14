@@ -5,3 +5,4 @@ console.log(ec1);
 
 const ec2 = ec1.cloneCar();
 console.log(ec2);
+5
