@@ -32,3 +32,4 @@ def nginx_stats():
 
 
 if __name__ == "__main__"
+ nginx_stats()
