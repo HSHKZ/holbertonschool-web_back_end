@@ -16,7 +16,6 @@ def nginx_stats():
     print("Methods:")
     methods = ["GET", "POST", "PUT", "PATCH", "DELETE"]
 
-    # Aggregation to count methods
     pipeline = [
         {"$group": {"_id": "$method", "count": {"$sum": 1}}},
         {"$match": {"_id": {"$in": methods}}}
@@ -26,7 +25,6 @@ def nginx_stats():
     for method in methods:
         print(f"\tmethod {method}: {method_counts.get(method, 0)}")
 
-    # Count status checks
     status_check = collection.count_documents({"method": "GET", "path": "/status"})
     print(f"{status_check} status check")
 
