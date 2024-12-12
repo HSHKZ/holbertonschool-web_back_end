@@ -31,5 +31,4 @@ def nginx_stats():
     print(f"{status_check} status check")
 
 
-if __name__ == "__main__":
-    nginx_stats()
+if __name__ == "__main__"
