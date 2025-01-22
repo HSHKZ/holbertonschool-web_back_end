@@ -9,7 +9,7 @@ const countStudents = (database) => {
       if (err) {
         reject(new Error('Cannot load the database'));
       } else {
-        const lines = data.trim().split('\n').slice(1); // Ignore the header
+        const lines = data.trim().split('\n').slice(1);
         const students = lines.filter((line) => line.trim() !== '');
         const count = students.length;
 
